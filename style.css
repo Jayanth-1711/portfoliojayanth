@@ -1,14 +1,16 @@
 :root{
     --clr-purple:#9900ff;
 }
-
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 .navbar-bg-color {
   background-color: transparent;
 }
 .navbar-nav{
   border-style: none;
 }
-/* Hover underline animation */
 .hover-underline {
   position: relative;
   display: inline-block;
@@ -74,7 +76,6 @@ html {
   .subtitle {
     font-size: 90px;
     margin-top: 10px;
-    color: ;
     font-weight: 900;
   }
   .subs{
@@ -111,14 +112,14 @@ html {
   border-radius: 6px;
 }
   .pfp-md {
-    width:85%;
-    max-width: 350px;
+    width:80%;
+    max-width: 600px;
     border-radius: 50%;
     
   }
   
   .pfp {
-    width: 50%;
+    width: 40%;
     border-radius: 50%;
   }
 
@@ -160,8 +161,6 @@ html {
 .i-container{
   width:;
 }
-
-
 .test{
   border-style: solid;
   border-color: black;
@@ -170,7 +169,7 @@ html {
 
 .pfp-container-md{
   width: 70%;
-
+}
 
 /*about*/
 .about-section{
@@ -216,10 +215,9 @@ html {
     font-size: 25px;
 }
 
-/* Increase font size for buttons */
 .btn.resume-btn,
 .btn.contact-btn {
-    font-size: 1.25rem; /* Increase as needed, e.g., 20px */
+  
     font-weight: 500;
     padding: 0.6rem 1.5rem;
 }
@@ -268,11 +266,91 @@ html {
     font-size: 25px;
 }
 
-.skills-container {
-  display: flex;
-  gap: 16px;
+
+
+/*skills*/
+
+.skills-heading{
+  color: #9900ff !important;
+  
+}
+
+ .skills-grid{
+  gap: 20px;
+  align-content: center;
+} 
+
+.skill-card{
+  width: 220px;
+  height: 220px;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  padding: 10px;
+  background-color:rgb(237, 234, 234);
+  background: rgba(255, 255, 255, 0.03); 
+  
+#section1{
+  background-color:#F5F5F5 ;
+}
+
+}
+.skill-card:hover {
+  box-shadow: 0 8px 24px #9900ff;
+  background-color: #ffffff;
+  background-color:#2a2a2a;
+}
+.skill-card:hover h3,
+.skill-card:hover p {
+  color: #ffffff;
+}
+.skill-title{
+  font-size: 27px;
+  
+  
+}
+.skill-para{
+  font-size: 16px;
+  font-family: roboto;
+}   
+.skill-icon {
+  font-size: 35px;
+  color: #9900ff;
+  margin-bottom: 10px;
+}
+.skill-heading{
+  font-size:3rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+  align-content:center;
+}
+
+
+
+
+/* project */
+
+.project-pfp{
+  width: 300px;
+  align-items: center;
+  align-content: center;
   justify-content: center;
 }
-.skills-card {
-  flex: 0 0 60px; /* or whatever width you want */
+.project-card{
+  height: 350px;
+}
+.project-card:hover{
+  background-color:#2a2a2a;
+   box-shadow: 0 8px 24px #9900ff;
+  transform: translateY(-40);
+}
+.project-card:hover h4,
+.project-card:hover p {
+  color: #ffffff;
+}
+.project-grid{
+  display: flex;
+  gap: 20px;
+
 }
