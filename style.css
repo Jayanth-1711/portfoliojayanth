@@ -31,7 +31,6 @@ html {
 .hover-underline:hover::after {
   width: 100%;
 }
-/* Mobile dropdown box style */
 @media (max-width: 991.98px) {
   .dropdown-box {
     background-color: #ffffff;
@@ -287,22 +286,18 @@ html {
   border-radius: 8px;
   border-width: 1px;
   padding: 10px;
-  background-color:rgb(237, 234, 234);
-  background: rgba(255, 255, 255, 0.03); 
+  background-color:#F5F5F5;
   
-#section1{
-  background-color:#F5F5F5 ;
-}
-
+  overflow-wrap: break-word;
 }
 .skill-card:hover {
-  box-shadow: 0 8px 24px #9900ff;
-  background-color: #ffffff;
+ box-shadow: 0 8px 24px #9900ff;
   background-color:#2a2a2a;
+   
 }
 .skill-card:hover h3,
 .skill-card:hover p {
-  color: #ffffff;
+    color: #F5F5F5;
 }
 .skill-title{
   font-size: 27px;
@@ -312,6 +307,7 @@ html {
 .skill-para{
   font-size: 16px;
   font-family: roboto;
+  
 }   
 .skill-icon {
   font-size: 35px;
@@ -321,7 +317,7 @@ html {
 .skill-heading{
   font-size:3rem;
   font-weight: 700;
-  color: black;
+  color: #2a2a2a;
   margin-bottom: 20px;
   align-content:center;
 }
@@ -331,15 +327,6 @@ html {
 
 /* project */
 
-.project-pfp{
-  width: 300px;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-.project-card{
-  height: 350px;
-}
 .project-card:hover{
   background-color:#2a2a2a;
    box-shadow: 0 8px 24px #9900ff;
@@ -352,5 +339,81 @@ html {
 .project-grid{
   display: flex;
   gap: 20px;
+}
 
+.card-content{
+  overflow-wrap: break-word;
+}
+.project-card {
+  border: 2px solid black;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+.project-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-pfp {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h4 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.card-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  color: #007bff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+
+/* navigation */
+
+.navigation-flex {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+}
+.nav-card {
+  flex: 1 1 0;
+  min-width: 0;
+  background-color:#F5F5F5;
+}
+
+
+.nav-select{
+  box-shadow: 0 8px 24px #9900ff;
+  background-color:#2a2a2a;
+  color: #F5F5F5;
+}
+#section1, #section2 {
+  display: none;
 }
