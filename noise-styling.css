@@ -7,6 +7,10 @@ body{
     
     color: black;
 }
+.blur{
+    background: transparent;
+    backdrop-filter: blur(1px);
+}
 .noise{
     background: linear-gradient( #F5F5F5 0%, #F5F5F5 60%, black 100%);*/
 }
