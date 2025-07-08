@@ -3,6 +3,9 @@
 }
 html {
   scroll-behavior: smooth;
+
+}
+body{
   overflow-x: hidden;
 }
 .navbar-bg-color {
@@ -102,14 +105,15 @@ html {
   border-radius: 6px;
 }
   .pfp-md {
-    width:80%;
-    max-width: 600px;
+    width:50%;
     border-radius: 50%;
     
   }
-  
+  .content{
+    align-content: center;
+  }
   .pfp {
-    width: 40%;
+    width: 50%;
     border-radius: 50%;
   }
 
@@ -157,7 +161,7 @@ html {
 }
 
 .pfp-container-md{
-  width: 70%;
+  
 }
 
 /*about*/
