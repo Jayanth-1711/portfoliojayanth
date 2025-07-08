@@ -73,22 +73,13 @@ html {
     box-shadow: none;
   }
   .subtitle {
-    font-size: 90px;
+    font-size: 65px;
     margin-top: 10px;
     font-weight: 900;
   }
   .subs{
     color: #666;
     font-size: 27px;
-  }
-  .scroll-down {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    animation: bounce 2s infinite;
-    color: #9900ff;
   }
 .resume-btn {
     background-color: #9900ff !important;
@@ -143,10 +134,12 @@ html {
     font-size: 30px;
 }
 .bg-container {
-    min-height: 94vh;
-    height: 93vh;
+    height: 100vh;
     color: black;
     padding-top: 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 .txt-color{
     color: #9900ff;
@@ -157,9 +150,6 @@ html {
 
 }
 
-.i-container{
-  width:;
-}
 .test{
   border-style: solid;
   border-color: black;
@@ -417,3 +407,4 @@ html {
 #section1, #section2 {
   display: none;
 }
+
