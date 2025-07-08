@@ -7,12 +7,8 @@ body{
     
     color: black;
 }
-.blur{
-    background: transparent;
-    backdrop-filter: blur(1px);
-}
 .noise{
-    background: linear-gradient( #F5F5F5 0%, #F5F5F5 60%, black 100%);*/
+     background: linear-gradient( #F5F5F5 0%, #F5F5F5 60%, black 100%); 
 }
 .noise::before{
     position:absolute;
@@ -23,9 +19,9 @@ body{
     content: "";
     filter: blur(px);
     opacity: .1;  
-    z-index: ;
+    z-index: 1;
     pointer-events: none;   
-    background-image: url(images/noise.gif) ;
+    background-image: url(images/noise.gif);
 }
 .noise-about {
     background-color: #eaf6f6; 
@@ -34,7 +30,7 @@ body{
     height: 100vh;
 }
 .noise-about::before{
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -42,8 +38,12 @@ body{
     content: "";
     filter: blur(px);
     opacity: .1;  
-    z-index: 1000;
+    z-index: 1;
     pointer-events: none;   
-    background-size: cover;
-    background: url(images/noise.gif) ;
+    background-image: url(images/noise.gif) ;
+}
+
+.blur{
+    background: transparent;
+    backdrop-filter: blur(30px);
 }
