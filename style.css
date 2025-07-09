@@ -104,8 +104,12 @@ html {
   height:50px;
   border-radius: 6px;
 }
+.contact-btn:hover{
+  color: #F5F5F5 !important;
+  background-color: #2a2a2a;
+}
   .pfp-md {
-    width:50%;
+    width:40%;
     border-radius: 50%;
     
   }
@@ -192,7 +196,6 @@ html {
 .purple{
   color: var(--clr-purple);
 }
-.about-me-text{font-size: 18px;}
 
 .interests-container {
     border-color: black;
@@ -259,8 +262,66 @@ html {
     font-size: 25px;
 }
 
+/* about me landing page */
+
+.about-icon {
+  color: white;
+  width: 35px;
+  height: 35px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.icon-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon-card > p {
+  font-size: 15px;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+.about-card {
+  background-color: #F5F5F5;
+  border-style: solid;
+  border-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
 
 
+
+/* portfolio */
+.portfolio{
+  height: auto;
+  width: 100%;
+}
+.showcase > p{
+  font-size: 20px;
+}
+.portfolio-heading{
+  color: #9900ff;
+}
+@media (min-width: 768px) {
+  .portfolio-heading {
+    font-size: 2.75rem;
+  }
+}
 /*skills*/
 
 .skills-heading{
@@ -285,7 +346,7 @@ html {
   overflow-wrap: break-word;
 }
 .skill-card:hover {
- box-shadow: 0 8px 24px #9900ff;
+  box-shadow: 0 8px 24px #9900ff;
   background-color:#2a2a2a;
    
 }
@@ -295,14 +356,16 @@ html {
 }
 .skill-title{
   font-size: 27px;
-  
-  
 }
 .skill-para{
-  font-size: 16px;
   font-family: roboto;
-  
+  font-size: 16px;
 }   
+@media (max-width:991px) {
+  .skill-para{
+    font-size: 14px;
+    }
+}
 .skill-icon {
   font-size: 35px;
   color: #9900ff;
@@ -400,6 +463,17 @@ html {
   flex: 1 1 0;
   min-width: 0;
   background-color:#F5F5F5;
+  border-radius: 12px;
+}
+.nav-card:hover i,
+.nav-card:hover p {
+  transform: scale(1.2);
+}
+
+.nav-icon{
+  font-size: 35px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
 }
 
 
@@ -407,8 +481,46 @@ html {
   box-shadow: 0 8px 24px #9900ff;
   background-color:#2a2a2a;
   color: #F5F5F5;
+  .nav-icon{
+    color: #9900ff;
+  }
 }
-#section1, #section2 {
+#section1, #section2, #section3{
   display: none;
 }
 
+/* certificates */
+
+.certificate-container h1{
+
+}
+.certificate-container .certificates-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.certificate-container .certificates-images .image{
+  height: 250px;
+  width: 350px;
+  border: 3px solid #2a2a2a;
+  overflow: hidden;
+  cursor: pointer;
+}
+.certificate-container .certificates-images .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.image:hover img{
+  transform: scale(1.1);
+}
+.certificate-container .certificates-images .image:hover{
+  box-shadow: 0 8px 24px #9900ff;
+}
+
+/* footer */
