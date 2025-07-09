@@ -25,6 +25,7 @@ function display(sectionId) {
   // Hide all sections
   document.getElementById('section1').style.display = 'none';
   document.getElementById('section2').style.display = 'none';
+  document.getElementById('section3').style.display = 'none';
 
   // Show the clicked section
   document.getElementById(sectionId).style.display = 'block';
