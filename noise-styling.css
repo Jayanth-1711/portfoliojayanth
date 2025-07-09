@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color:#f0f0f0;
+    background-color:#F5F5F5;
     
     color: black;
 }
@@ -14,14 +14,15 @@ body{
     position:absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     content: "";
+    background: transparent;
     filter: blur(px);
     opacity: .1;  
     z-index: 1;
     pointer-events: none;   
-    background-image: url(images/noise.gif);
+    background-image: url(images/noise.gif) !important
 }
 .noise-about {
     background-color: #eaf6f6; 
@@ -46,4 +47,29 @@ body{
 .blur{
     background: transparent;
     backdrop-filter: blur(30px);
+}
+.footer{
+     background: linear-gradient( #F5F5F5 0%, #F5F5F5 40%, black 100%);
+     border-top: #2a2a2a;
+     border-style: solid;
+     border-color: black;
+     border-bottom-width: 0px;
+     border-left-width: 0px;
+     border-right-width: 0px;
+     border-top-width:3px ;
+     width: 100%;
+    height: 15vh;
+    
+}
+.footer::before{
+    position:absolute;
+    width: 100%;
+    height: 15vh;
+    content: "";
+    background: transparent;
+    filter: blur(px);
+    opacity: .1;  
+    z-index: 1;
+    pointer-events: none;   
+    background-image: url(images/noise.gif) !important
 }
