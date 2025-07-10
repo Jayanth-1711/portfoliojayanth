@@ -58,18 +58,73 @@ body{
      border-right-width: 0px;
      border-top-width:3px ;
      width: 100%;
-    height: 15vh;
+    height: 25vh;
+    align-items: center;
+    
     
 }
 .footer::before{
     position:absolute;
     width: 100%;
-    height: 15vh;
+    height: 25vh;
     content: "";
     background: transparent;
     filter: blur(px);
     opacity: .1;  
     z-index: 1;
     pointer-events: none;   
-    background-image: url(images/noise.gif) !important
+    background-image: url(images/noise.gif) !important;
+}
+.footer-warp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.links-warp {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.link {
+  text-decoration: none !important;
+  color: black;
+  font-weight: 500;
+  display: inline-flex;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: #F5F5F5;
+  background-color: black;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.update {
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+@media (max-width: 768px) {
+  .footer-warp {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+  }
+
+  .update {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
