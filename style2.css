@@ -1,5 +1,5 @@
 :root{
-    --clr-purple:#9900ff;
+    --clr-purple:black;
 }
 
 .navbar-bg-color {
@@ -196,13 +196,14 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 22px;
-  color:#9900ff;
+  color:black;
   font-weight: bold;
   z-index: 2;
   letter-spacing: 2px;
 }
 .purple {
   color: var(--clr-purple);
+  font-weight: 750;
 }
 .about-me-text {
   font-size: 18px;
@@ -229,7 +230,8 @@ html {
 }
 
 .edu-container {
-  gap: 1.5rem;
+  gap: 15px;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -245,6 +247,7 @@ html {
   border-color: black;
   border-style: solid;
   align-items: center;
+
 }
 
 .edu-img {
@@ -258,5 +261,5 @@ html {
 }
 
 .edu-title{
-    color: #9900ff;
+    color:black;
 }
